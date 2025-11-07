@@ -38,7 +38,7 @@ def test_sine_wave():
     
     frequency = 10
     duration = 1.0
-    sample_rate = 100
+    sample_rate = 400 
     time, wave = create_sine_wave(frequency, duration, sample_rate)
 
     expected_length = int(sample_rate * duration)
@@ -48,12 +48,11 @@ def test_sine_wave():
     assert abs(time[-1] - expected_last_time) < 1e-9
 
     assert abs(wave[0] - 0.0) < 1e-7
-    assert abs(np.max(wave) - 1.0) < 1e-6
+    assert abs(np.max(wave) - 1.0) < 1e-6 
     assert abs(np.min(wave) - (-1.0)) < 1e-6
     
     print("create_sine_wave tests passed.")
     print("-" * 30)
-
 
 if __name__ == '__main__':
     test_step_function()
