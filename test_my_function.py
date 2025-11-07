@@ -3,7 +3,7 @@ from sine_function import create_sine_wave
 
 
 def test_create_sine_wave():
-    t, y = create_sine_wave(1, 2, 1)
+    t, y = create_sine_wave(1, 1, 1000)
     assert len(t) == 1000
     assert y[0] == 0
 
