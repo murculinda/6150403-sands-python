@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SignalsProject"
+version = "0.1.0"
+description = "This is a project for signals and systems course which generates different signals"
+authors = [
+    {name = "Marcel Nowak", email = "manowak@tudelft.nl"}
+]
+dependencies = ["numpy", "math", "matplotlib"]
