@@ -16,7 +16,7 @@ def test_create_sine_wave():
     assert np.allclose(y, 0)
 
 def test_we_want_to_see_a_fail():
-    # This call yields len(t) = 2 (2 seconds * 1 sample/sec)
+    
     t, y = create_sine_wave(1, 2, 1)
-    # This assertion is expected to fail on purpose
+    
     assert len(t) == 999

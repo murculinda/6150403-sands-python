@@ -22,22 +22,7 @@ def create_sine_wave(frequency, duration_seconds, sample_rate=1000):
 
 if __name__ == "__main__":
    
-    try:
-        import matplotlib.pyplot as plt
-        
 
-        time, wave = create_sine_wave(frequency=440, duration_seconds=1.0)
-        
-        plt.figure(figsize=(10, 4))
-        plt.plot(time, wave)
-        plt.title('440 Hz Sine Wave')
-        plt.xlabel('Time (seconds)')
-        plt.ylabel('Amplitude')
-        plt.grid(True)
-        plt.show()
-
-    except ImportError:
-        print("Matplotlib not installed. Cannot show plot.")
     
     t, wave = create_sine_wave(frequency=1, duration_seconds=1, sample_rate=4)
     print(f"Time array: {t}")
